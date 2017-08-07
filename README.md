@@ -4,7 +4,7 @@ This refers to the attached youtube video and adapts the code to the current API
 Check the video if you need a first impression. Attached at the end.
 
 Here is a basic progress-bar web-component with vanilla ES6.
-
+![Screenshot](screenshot.png)
 ## How to run this 
 
 Click on the index.html file, tested with chrome so far :)
