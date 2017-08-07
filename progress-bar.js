@@ -5,30 +5,30 @@ class ProgressBar extends HTMLElement{
         this._complete = 0;
         const shadowRoot = this.attachShadow({mode: 'open'});
 
-        // shadowRoot.innerHTML = `
-        //     <style>
-        //         .progress-bar {
-        //             width: 50%;
-        //             height: 30px;
-        //             background-color: #EDF2F4;
-        //             border-radius: 5px;
-        //             color: white;
-        //         }
+        shadowRoot.innerHTML = `
+            <style>
+                .progress-bar {
+                    width: 50%;
+                    height: 30px;
+                    background-color: #EDF2F4;
+                    border-radius: 5px;
+                    color: white;
+                }
 
-        //         .progress-bar-inner {
-        //             height: 100%;
-        //             line-height: 30px;
-        //             background: #2B2D43;
-        //             text-align: center;
-        //             border-radius: 5px;
-        //             transition: width 0.25s;
-        //         }
-        //     </style>
-        //     <slot></slot>
-        //     <div class="progress-bar">
-        //         <div class="progress-bar-inner">${this._complete}</div>
-        //     </div>
-        // `;
+                .progress-bar-inner {
+                    height: 100%;
+                    line-height: 30px;
+                    background: #2B2D43;
+                    text-align: center;
+                    border-radius: 5px;
+                    transition: width 0.25s;
+                }
+            </style>
+            <slot></slot>
+            <div class="progress-bar">
+                <div class="progress-bar-inner">${this._complete}</div>
+            </div>
+        `;
     }
 
     get complete() {
