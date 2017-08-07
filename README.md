@@ -11,7 +11,7 @@ Click on the index.html file, tested with chrome so far :)
 
 ## My changes compared to the one in the video
 
-I put the template into constructor as shown in the google dev tutorials. I added the *slot* as a fallback but never used it. I put it there for consistency.
+I put the template into the constructor as shown in the google dev tutorials. I added the *slot* as a fallback but never used it. I put it there for consistency.
 
 ```js
     constructor(){
