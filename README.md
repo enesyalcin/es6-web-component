@@ -7,7 +7,7 @@ Here is a basic progress-bar web-component with vanilla ES6.
 
 ## How to run this 
 
-Put it in any web server of your choice. If you need something handy try chromes web server extension tool!
+Click on the index.html file, tested with chrome so far :)
 
 ## My changes compared to the one in the video
 
