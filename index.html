@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Components</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue';
+        }
+</style>
+
+<script src="progress-bar.js"></script>
+
+</head>
+<body>
+    <h1>Web Components</h1>
+    <progress-bar complete="10"></progress-bar>
+
+    <script>
+        val = 0;
+        interval = setInterval(()=>{
+            document.querySelector("progress-bar").setAttribute('complete', val+=1);
+            if(val === 100){
+                clearInterval(interval);
+            }
+        }, 100);
+    </script>
+</body>
+</html>
